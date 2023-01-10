@@ -1,0 +1,138 @@
+header {
+    height: 88px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 15px;
+}
+.header-logo {
+    height: 75px;
+    width: 15%;
+    transform: translateX(-18px);
+}
+.header-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.header-menu {
+    width: 70%;
+}
+.header-contact {
+    width: 15%;
+}
+.header-menu-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.header-menu-wrapper li a {
+    color: #000;
+}
+.header-menu-wrapper li a {
+    padding: 34px 10px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.header-menu-wrapper li a:hover {
+    background-color: #46c3fc;
+    text-decoration: underline;
+    color: white;
+}
+.header-contact {
+    display: flex;
+    transform: translateX(-24px);
+}
+.contact-desc {
+    font-size: 16px;
+    font-weight: 800;
+    color: #46c3fc;
+    margin-bottom: 8px;
+}
+.contact-phonenumber {
+    color: #d91a5d;
+    font-weight: 900;
+    font-size: 16px;
+}
+.contact-icon {
+    font-size: 22px;
+    padding: 0 10px;
+    color: #d91a5d;
+}
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .hidden-mb {
+        display: none;
+    }
+    .header-menu-mobile {
+        width: 100%;
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .hidden-pc {
+        display: none;
+    }
+    .menu-logo {
+        font-size: 26px;
+        color: #46c3fc;
+    }
+    header {
+        height: auto;
+    }
+    .header-logo {
+        width: 20%;
+        transform: translateX(0px);
+        padding: 0 15px;
+    }
+    .header-contact {
+        width: 60%;
+        align-self: flex-start;
+        margin: 20px 35px;
+    }
+    .header-logo-menu {
+        width: 20%;
+        align-self: flex-start;
+        text-align: end;
+        padding: 15px;
+    }
+    .header-logo {
+        height: auto;
+    }
+    .header-menu-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #46c3fc;
+    }
+    .header-menu-wrapper li a {
+        padding: 0;
+        color: white;
+    }
+    .header-menu-wrapper li {
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .header-menu-mobile {
+        width: 100%;
+        display: none;
+    }
+    .show {
+        display: block !important;
+    }
+}
